@@ -132,7 +132,7 @@ function SectionTitle({ eyebrow, children, align = "center" }: { eyebrow: string
 
 function Hero() {
   return (
-    <section id="top" className="relative min-h-[520px] overflow-hidden md:min-h-[540px] lg:min-h-[560px]">
+    <section id="top" className="relative min-h-[580px] overflow-hidden md:min-h-[600px] lg:min-h-[620px]">
       {/* Sunrise hills background — realistic atmospheric photography */}
       <img
         src="/images/hero-sunrise-hills.png"
@@ -167,17 +167,17 @@ function Hero() {
         })}
       </div>
 
-      <div className="site-container relative flex min-h-[520px] items-center md:min-h-[540px] lg:min-h-[560px]">
-        {/* Left text block — spacious, breathable, 2 clean lines */}
-        <div className="relative z-20 max-w-[620px] py-12 sm:py-14 lg:py-16">
+      <div className="site-container relative flex min-h-[580px] items-center md:min-h-[600px] lg:min-h-[620px]">
+        {/* Left text block — centered vertically */}
+        <div className="relative z-20 max-w-[620px] py-10 sm:py-12 lg:py-16">
           {/* Main Headline — exactly 2 lines */}
-          <h1 className="font-display text-[32px] font-semibold leading-[1.02] tracking-[-0.025em] sm:text-[42px] md:text-[48px] lg:text-[54px]">
+          <h1 className="font-display text-[34px] font-semibold leading-[1.02] tracking-[-0.025em] sm:text-[44px] md:text-[48px] lg:text-[54px]">
             <span className="block whitespace-normal sm:whitespace-nowrap text-primary">Awaken the Divine Within,</span>
             <span className="block whitespace-normal sm:whitespace-nowrap text-gold-dark">Transform the World Around.</span>
           </h1>
 
           {/* Refined gold ornamental divider */}
-          <div className="my-3.5 flex max-w-[300px] items-center gap-2.5">
+          <div className="my-3 flex max-w-[320px] items-center gap-2.5">
             <div className="h-px flex-1 bg-gold/50" />
             <svg viewBox="0 0 20 20" className="size-3 text-gold-dark" fill="currentColor">
               <path d="M10 2.5L12 8L17.5 10L12 12L10 17.5L8 12L2.5 10L8 8L10 2.5Z" />
@@ -186,12 +186,12 @@ function Hero() {
           </div>
 
           {/* Supporting heading */}
-          <p className="font-display text-[18px] font-normal leading-tight text-gold-dark sm:text-[21px]">
+          <p className="font-display text-[19px] font-normal leading-tight text-gold-dark sm:text-[22px]">
             The Science of Awareness for a Conscious Life.
           </p>
 
           {/* Clean readable sans-serif description */}
-          <p className="mt-2.5 max-w-[450px] text-[13px] leading-5 text-body">
+          <p className="mt-2.5 max-w-[460px] text-[13px] leading-6 text-body">
             Science Divine is a non-profit organisation dedicated to spreading the timeless wisdom of Awareness (Sakshi Bhav) and Bhagavad Gita for a better, conscious &amp; compassionate world.
           </p>
 
@@ -219,7 +219,7 @@ function Hero() {
       </div>
 
       {/* Founder endorsement block — positioned directly in golden sky beside Guru Ji's face */}
-      <div className="absolute right-[26%] top-[90px] z-20 hidden text-center lg:block xl:right-[28%] xl:top-[100px]">
+      <div className="absolute right-[26%] top-[85px] z-20 hidden text-center lg:block xl:right-[28%] xl:top-[95px]">
         <p className="font-display text-[16px] font-semibold tracking-wide text-primary whitespace-nowrap">Sadguru Sakshi Shree</p>
         <p className="mt-0.5 text-[10px] text-body/80 whitespace-nowrap">Founder, Science Divine Foundation</p>
         <img
@@ -232,14 +232,14 @@ function Hero() {
         />
       </div>
 
-      {/* Guru sofa cutout — aligned directly on right edge next to floating action sidebar */}
+      {/* Guru sofa cutout — full head/hair 100% visible, no extra top space, feet hidden below bottom edge */}
       <img
         src="/images/sakshi-shree-hero-sofa-cutout.png"
         alt="Sadguru Sakshi Shree"
         width={1024}
         height={1536}
         loading="eager"
-        className="pointer-events-none absolute -bottom-24 right-0 z-10 hidden h-[126%] w-auto max-w-[48%] object-contain object-bottom lg:block xl:-bottom-30 xl:max-w-[50%]"
+        className="pointer-events-none absolute -bottom-16 right-0 z-10 hidden h-[106%] w-auto max-w-[46%] object-contain object-bottom lg:block xl:right-4"
       />
     </section>
   );
@@ -302,39 +302,39 @@ function PhilosophyQuote() {
 const journeySvgIcons = [
   // Awareness - Eye with rays
   <svg key="awareness" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="size-11">
-    <ellipse cx="32" cy="36" rx="14" ry="9" stroke="#0D1F38" strokeWidth="2" fill="none"/>
-    <circle cx="32" cy="36" r="4.5" fill="#0D1F38"/>
+    <ellipse cx="32" cy="36" rx="14" ry="9" stroke="#6D140E" strokeWidth="2" fill="none"/>
+    <circle cx="32" cy="36" r="4.5" fill="#6D140E"/>
     <circle cx="32" cy="36" r="2" fill="#C4933F"/>
     <path d="M32 12v5M32 55v-5M12 36H7M57 36h-5M17.5 21.5l-3.5-3.5M49.5 21.5l3.5-3.5M17.5 50.5l-3.5 3.5M49.5 50.5l3.5 3.5" stroke="#D5AB54" strokeWidth="1.8" strokeLinecap="round"/>
   </svg>,
   // Wisdom - Open Book with lotus
   <svg key="wisdom" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="size-11">
-    <path d="M8 16 C8 16 20 14 32 20 C44 14 56 16 56 16 L56 48 C56 48 44 46 32 52 C20 46 8 48 8 48 Z" stroke="#0D1F38" strokeWidth="2" fill="#FAF4E8"/>
-    <line x1="32" y1="20" x2="32" y2="52" stroke="#0D1F38" strokeWidth="1.5"/>
+    <path d="M8 16 C8 16 20 14 32 20 C44 14 56 16 56 16 L56 48 C56 48 44 46 32 52 C20 46 8 48 8 48 Z" stroke="#6D140E" strokeWidth="2" fill="#FAF4E8"/>
+    <line x1="32" y1="20" x2="32" y2="52" stroke="#6D140E" strokeWidth="1.5"/>
     <path d="M32 13 C32 13 28 10 28 7 C28 5 30 4 32 6 C34 4 36 5 36 7 C36 10 32 13 32 13Z" fill="#D5AB54"/>
     <path d="M27 10 C25 8 22 9 22 11 C22 14 27 13 32 13" fill="#D5AB54" opacity="0.7"/>
     <path d="M37 10 C39 8 42 9 42 11 C42 14 37 13 32 13" fill="#D5AB54" opacity="0.7"/>
   </svg>,
   // Practice - Meditating person with aura
   <svg key="practice" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="size-11">
-    <circle cx="32" cy="14" r="5" fill="#0D1F38"/>
-    <path d="M32 19 L32 34" stroke="#0D1F38" strokeWidth="2" strokeLinecap="round"/>
-    <path d="M18 28 Q25 22 32 26 Q39 22 46 28" stroke="#0D1F38" strokeWidth="2" strokeLinecap="round" fill="none"/>
-    <path d="M22 34 Q27 42 32 44 Q37 42 42 34" stroke="#0D1F38" strokeWidth="2" strokeLinecap="round" fill="none"/>
+    <circle cx="32" cy="14" r="5" fill="#6D140E"/>
+    <path d="M32 19 L32 34" stroke="#6D140E" strokeWidth="2" strokeLinecap="round"/>
+    <path d="M18 28 Q25 22 32 26 Q39 22 46 28" stroke="#6D140E" strokeWidth="2" strokeLinecap="round" fill="none"/>
+    <path d="M22 34 Q27 42 32 44 Q37 42 42 34" stroke="#6D140E" strokeWidth="2" strokeLinecap="round" fill="none"/>
     <circle cx="32" cy="32" r="18" stroke="#D5AB54" strokeWidth="1.2" strokeDasharray="3 3" opacity="0.6"/>
     <circle cx="32" cy="32" r="12" stroke="#D5AB54" strokeWidth="0.8" opacity="0.4"/>
   </svg>,
   // Purpose - Sunrise over hills
   <svg key="purpose" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="size-11">
-    <path d="M8 44 Q20 34 32 38 Q44 34 56 44" stroke="#0D1F38" strokeWidth="2" fill="#FAF4E8"/>
-    <path d="M8 50 Q20 42 32 46 Q44 42 56 50" stroke="#0D1F38" strokeWidth="1.5" fill="#F5EDE0" opacity="0.6"/>
+    <path d="M8 44 Q20 34 32 38 Q44 34 56 44" stroke="#6D140E" strokeWidth="2" fill="#FAF4E8"/>
+    <path d="M8 50 Q20 42 32 46 Q44 42 56 50" stroke="#6D140E" strokeWidth="1.5" fill="#F5EDE0" opacity="0.6"/>
     <path d="M18 38 A14 14 0 0 1 46 38" stroke="#D5AB54" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
     <circle cx="32" cy="38" r="6" fill="#D5AB54"/>
     <path d="M32 18v-5M20 22l-4-3M44 22l4-3M14 34h-5M55 34h-5" stroke="#D5AB54" strokeWidth="1.8" strokeLinecap="round"/>
   </svg>,
   // Seva - Hands holding heart
   <svg key="seva" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="size-11">
-    <path d="M20 44 L12 36 C10 34 10 30 13 28 C16 26 19 28 20 30 L20 26 C20 23 22 21 25 21 C26 21 27 22 28 23 C28 21 30 20 32 20 C34 20 36 21 36 23 C37 22 38 21 39 21 C42 21 44 23 44 26 L44 30 C45 28 48 26 51 28 C54 30 54 34 52 36 L44 44 L32 54 Z" fill="#FAF4E8" stroke="#0D1F38" strokeWidth="1.8" strokeLinejoin="round"/>
+    <path d="M20 44 L12 36 C10 34 10 30 13 28 C16 26 19 28 20 30 L20 26 C20 23 22 21 25 21 C26 21 27 22 28 23 C28 21 30 20 32 20 C34 20 36 21 36 23 C37 22 38 21 39 21 C42 21 44 23 44 26 L44 30 C45 28 48 26 51 28 C54 30 54 34 52 36 L44 44 L32 54 Z" fill="#FAF4E8" stroke="#6D140E" strokeWidth="1.8" strokeLinejoin="round"/>
     <path d="M32 32 C32 32 27 28 27 25 C27 23 29 22 31 24 C31.5 24.5 32 25 32 25 C32 25 32.5 24.5 33 24 C35 22 37 23 37 25 C37 28 32 32 32 32Z" fill="#D5AB54"/>
   </svg>,
 ];
@@ -627,7 +627,7 @@ function WellnessSolutions() {
                 />
                 <div
                   className="flex size-full items-center justify-center rounded-full border-2 bg-white transition-all duration-300 group-hover:border-gold"
-                  style={{ borderColor: "#1a2f5a" }}
+                  style={{ borderColor: "#6D140E" }}
                 >
                   {item.icon}
                 </div>
