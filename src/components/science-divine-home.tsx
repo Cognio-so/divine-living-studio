@@ -67,9 +67,9 @@ const topics: { label: string; icon: IconType }[] = [
 ];
 
 const articles = [
-  { category: "Meditation", title: "Why Meditation Isn’t Working for You?", date: "Aug 10, 2026", image: "/images/program-sadhna.jpg" },
-  { category: "Bhagavad Gita", title: "Life Lessons from Bhagavad Gita for 21st Century", date: "Aug 05, 2026", image: "/images/program-gita.jpg" },
-  { category: "Life & Purpose", title: "The Key to Inner Freedom", date: "Jul 29, 2026", image: "/images/final-mountains.jpg" },
+  { category: "Meditation", title: "Why Meditation Isn’t Working for You?", date: "Aug 10, 2026", image: "/images/article-meditation.jpg" },
+  { category: "Bhagavad Gita", title: "Life Lessons from Bhagavad Gita for 21st Century", date: "Aug 05, 2026", image: "/images/article-gita.jpg" },
+  { category: "Life & Purpose", title: "The Key to Inner Freedom", date: "Jul 29, 2026", image: "/images/article-purpose.jpg" },
 ];
 
 function Brand({ light = false }: { light?: boolean }) {
@@ -129,11 +129,11 @@ function SectionTitle({ eyebrow, children, align = "center" }: { eyebrow: string
 
 function Hero() {
   return (
-    <section id="top" className="relative min-h-[690px] overflow-hidden md:min-h-[620px]">
+    <section id="top" className="relative min-h-[790px] overflow-hidden md:min-h-[620px]">
       <img src="/images/hero-mountains.jpg" alt="Himalayan mountains at sunrise" width={1920} height={912} className="absolute inset-0 size-full object-cover object-center" fetchPriority="high" />
       <div className="absolute inset-0 bg-hero-overlay" />
-      <div className="site-container relative min-h-[690px] md:min-h-[620px]">
-        <div className="relative z-20 max-w-[550px] pt-16 sm:pt-24 md:pt-[115px]">
+      <div className="site-container relative min-h-[790px] md:min-h-[620px]">
+        <div className="relative z-20 max-w-[550px] pt-14 sm:pt-24 md:pt-[115px]">
           <h1 className="font-display text-[46px] font-semibold leading-[0.98] tracking-[-0.025em] text-primary sm:text-[54px] lg:text-[64px]">Awaken the<br />Divine Within.</h1>
           <p className="mt-4 font-display text-[27px] leading-[1.04] text-gold-dark sm:text-[30px]">The Science of Awareness<br />for a Conscious Life.</p>
           <p className="mt-5 max-w-[470px] text-[13px] leading-6 text-body">Science Divine is a non-profit organisation dedicated to spreading the timeless wisdom of Awareness (Sakshi Bhav) and Bhagavad Gita for a better, conscious &amp; compassionate world.</p>
@@ -142,13 +142,13 @@ function Hero() {
             <Button asChild variant="outline" className="h-11 rounded-full border-border-strong bg-cream/70 px-6 text-[13px] text-primary shadow-none hover:-translate-y-px hover:bg-cream"><a href="#events">Join an Experience</a></Button>
           </div>
         </div>
-        <div className="absolute bottom-0 right-[-110px] z-10 w-[610px] sm:right-[-60px] md:right-[-20px] md:w-[650px] lg:right-[-30px] lg:w-[690px]">
+        <div className="absolute bottom-0 right-[-94px] z-10 w-[460px] sm:right-[-60px] sm:w-[560px] md:right-[-20px] md:w-[610px] lg:right-[-30px] lg:w-[650px]">
           <img src="/images/sakshi-shree-hero.png" alt="Sadguru Sakshi Shree seated peacefully" width={912} height={1104} className="h-auto w-full object-contain" fetchPriority="high" />
         </div>
         <div className="absolute right-[34%] top-[128px] z-20 hidden text-center lg:block">
           <p className="font-display text-lg font-semibold text-primary">Sadguru Sakshi Shree</p>
           <p className="mt-0.5 text-[9px] text-body">Founder, Science Divine Foundation</p>
-          <p className="mt-2 -rotate-6 font-display text-2xl italic text-gold-dark">Sakshi Shree</p>
+          <img src="/images/signature.png" alt="Signature" width={420} height={140} loading="lazy" className="mx-auto mt-1 h-10 w-32 object-contain" />
         </div>
       </div>
     </section>
@@ -198,7 +198,7 @@ function Programs() {
 }
 
 function FeaturedVideo() {
-  return <div className="relative mt-10 min-h-[210px] overflow-hidden rounded-lg"><img src="/images/featured-video.jpg" alt="Meditator overlooking Himalayan mountains at sunset" width={1600} height={544} loading="lazy" className="absolute inset-0 size-full object-cover" /><div className="absolute inset-0 bg-video-overlay" /><Button size="icon" className="absolute left-1/2 top-1/2 size-12 -translate-x-1/2 -translate-y-1/2 rounded-full bg-background/90 text-primary shadow-card hover:bg-background" aria-label="Play featured video"><Play className="ml-0.5 fill-current" /></Button><div className="relative ml-auto flex min-h-[210px] w-full max-w-[47%] flex-col justify-center px-6 sm:px-10"><p className="text-[10px] uppercase tracking-[0.15em] text-footer-muted">Featured Video</p><p className="mt-2 font-devanagari text-[25px] leading-snug text-primary-foreground sm:text-[31px]">गीता पढ़िए नहीं...<br /><span className="text-gold-light">गीता जीना सीखिए।</span></p></div></div>;
+  return <div className="relative mt-10 min-h-[210px] overflow-hidden rounded-lg"><img src="/images/featured-video.jpg" alt="Meditator overlooking Himalayan mountains at sunset" width={1600} height={544} loading="lazy" className="absolute inset-0 size-full object-cover" /><div className="absolute inset-0 bg-video-overlay" /><Button size="icon" className="absolute left-1/2 top-1/2 size-12 -translate-x-1/2 -translate-y-1/2 rounded-full bg-background/90 text-primary shadow-card hover:bg-background" aria-label="Play featured video"><Play className="ml-0.5 fill-current" /></Button><div className="relative ml-auto flex min-h-[210px] w-full max-w-[78%] flex-col justify-center px-6 sm:max-w-[47%] sm:px-10"><p className="text-[10px] uppercase tracking-[0.15em] text-footer-muted">Featured Video</p><p className="mt-2 font-devanagari text-[25px] leading-snug text-primary-foreground sm:text-[31px]">गीता पढ़िए नहीं...<br /><span className="text-gold-light">गीता जीना सीखिए।</span></p></div></div>;
 }
 
 function Events() {
